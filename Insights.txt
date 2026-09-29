@@ -1,0 +1,30 @@
+LINEAR REGRESSION:::
+---------------------
+
+
+5.2. Insights and Discussion:
+❖ What insights did you gain from the correlation analysis and scatter plots?
+
+The correlation analysis and scatter plots indicate that RAM, PPI, Internal Memory, and Rear Camera have positive relationships with mobile Price. RAM shows the strongest correlation, followed by PPI, Internal Memory, and Rear Camera. The upward trends in the scatter plots support these findings. Therefore, these features are useful predictors for the Linear Regression model, although correlation alone does not establish a causal relationship.
+
+
+❖ How do the selected features contribute to the prediction of mobile prices?
+The selected features contribute significantly to mobile price prediction because they show positive relationships with Price. RAM has the strongest relationship, followed by PPI, Internal Memory, and Rear Camera. The Linear Regression model uses the individual coefficients of these features together to estimate the Price of a mobile phone. However, other factors not included in the model may also influence mobile prices.
+
+
+❖ What do the slope (coefficient) and intercept reveal about the relationship between the
+features and the target variable?
+
+The regression coefficients show the direction and estimated magnitude of the relationship between RAM, PPI, Internal Memory, Rear Camera, and mobile Price. Positive coefficients indicate an increase in predicted Price when the corresponding feature increases, while negative coefficients indicate a decrease, assuming the other features remain constant. The intercept represents the baseline predicted Price when all selected feature values are zero.
+
+
+❖ How well does the model perform based on the evaluation metrics? Are there any
+discrepancies between the predicted and actual values?
+
+The Linear Regression model provides predictions based on RAM, PPI, Internal Memory, and Rear Camera. The evaluation metrics indicate how closely these predictions match the actual mobile prices. Some discrepancies between predicted and actual values are expected because the selected features do not capture every factor that influences mobile prices. Larger differences may occur for certain phones due to other factors such as processor, battery, display, brand, or additional features. Therefore, the model provides useful predictions, but its accuracy could potentially be improved by including additional relevant features or using more advanced regression algorithms.
+
+
+❖ What might be some potential improvements or additional steps you could take to
+enhance the model’s performance?
+
+The model's performance could potentially be improved by adding more relevant mobile specifications, performing feature engineering, handling outliers, and checking for multicollinearity. Different regression algorithms such as Random Forest, Gradient Boosting, Ridge, and Lasso can also be compared with Linear Regression. Cross-validation and hyperparameter tuning can further help determine whether the improved model performs consistently and provides more accurate mobile price predictions.
